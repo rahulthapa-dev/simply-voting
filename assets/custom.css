@@ -1,0 +1,66 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.custom-ul li {
+    padding-left: 25px;
+    position: relative;
+}
+.custom-ul li:before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    height: 6px;
+    width: 6px;
+    border-radius: 6px;
+    background-color: #000;
+}
+.custom-ul ul li span {
+    position: absolute;
+    left: 4px;
+    top: 0;
+}
+.custom-ul ul li:before {
+    display: none;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+    border-radius: 3px 3px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #5270FF;
+    border-radius: 3px 3px;
+}
