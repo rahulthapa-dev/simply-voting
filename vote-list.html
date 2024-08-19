@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="h-full bg-[#ff0000]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body>
+    <header class="bg-white">
+        <nav class="mx-auto sm:flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <a href="#" class="-m-1.5 p-1.5 text-center">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto mx-auto sm:mx-0" src="assets/img/login-company.png" alt="">
+            <p class="text-sm">Online Voting</p>
+          </a>
+          
+          <div class="flex justify-center sm:justify-end gap-x-5 lg:gap-x-12">
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Past Ballots</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact us</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900 flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+              </svg>
+              <span>English</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+            </a>
+          </div>
+        </nav>
+    </header>
+    <section class="py-2 px-4">
+        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
+            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Current ballots</h5>
+            <!-- step 1 -->
+            <div class="p-4">
+                <p class="mb-3">You are registered to vote in the following ballots</p> 
+                <div class="flex items-center gap-2 mb-3">
+                    <span><img src="assets/img/check.png" alt="check"></span>
+                    <p>Already voted - Election 2024</p>
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                    <span><img src="assets/img/alert.png" alt="alert"></span>
+                    <a href="" class="a-custom a-link "><span class="font-semibold">You need to vote!!</span> - Company President 2024</a>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <section class="py-2 px-4">
+        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
+            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Voting receipts</h5>
+            <!-- step 1 -->
+            <div class="p-4">
+                <p class="mb-3">You have voted in the follwoing ballots:</p> 
+                <div class="flex items-center gap-2 mb-3">
+                    <span><img src="assets/img/receipt.png" alt="alert"></span>
+                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2024</a>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <section class="py-2 px-4">
+        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
+            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Past ballots</h5>
+            <!-- step 1 -->
+            <div class="p-4">
+                <p class="mb-3">You have voted in the follwoing ballots:</p> 
+                <div class="flex items-center gap-2 mb-3">
+                    <span><img src="assets/img/past.png" alt="alert"></span>
+                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2023</a>
+                </div>   
+                <div class="flex items-center gap-2 mb-3">
+                    <span><img src="assets/img/past.png" alt="alert"></span>
+                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2022</a>
+                </div>   
+                <div class="flex items-center gap-2 mb-3">
+                    <span><img src="assets/img/past.png" alt="alert"></span>
+                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2020</a>
+                </div>  
+            </div>
+            
+            <footer class="p-4 text-center mt-5">
+                <div>
+                    This is the online voting system of <a href="">Your Organization. </a>
+                </div>
+                <div class="flex gap-3 justify-center mt-5">
+                    <span>Powered by</span>
+                    <a href="">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

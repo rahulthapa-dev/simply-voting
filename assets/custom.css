@@ -1,5 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
+    color: #333;
 }
 .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -63,4 +64,291 @@ body {
 {
 	background-color: #5270FF;
     border-radius: 3px 3px;
+}
+
+/* step */
+#breadcrumb {
+    list-style: none;
+    display: inline-block;
+}
+#breadcrumb .fa {
+    font-size: 14px;
+}
+#breadcrumb li {
+    float: left;
+    width: calc(100%/3);
+}
+/* completed */
+#breadcrumb li.completed a {
+    background-color: #27ae60;
+    color: #fff;
+}
+#breadcrumb li.completed a:after {
+    border-left-color:#27ae60;
+}
+#breadcrumb li.completed a span {
+    background-color: #09813C;
+}
+#breadcrumb li.completed a:hover {
+    background-color: #09813C;
+}
+#breadcrumb li.completed a:hover:after {
+    border-left-color:#09813C;
+}
+/* .active */
+#breadcrumb li.active:nth-child(even) a:before {
+    border-color: #3498db;
+    border-left-color: transparent;
+    top: -1px;
+}
+#breadcrumb li.active:nth-child(even) a:after {
+    border-left-color: #3498db;
+}
+#breadcrumb li.active:nth-child(even) a:hover:before {
+    border-color: #1486d3;
+    border-left-color: transparent;
+}
+#breadcrumb li.active:nth-child(even) a:hover:after {
+    border-left-color: #1486d3;
+}
+/*  */
+#breadcrumb li.active a {
+    color: #FFF;
+    display: block;
+    background: #3498db;
+    text-decoration: none;
+    position: relative;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+    margin-top: 10px;
+    border: 1px solid #3498db;
+}
+#breadcrumb li a {
+    color: #333;
+    display: block;
+    background: #e9e9e9;
+    text-decoration: none;
+    position: relative;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    margin-right: 23px;
+    margin-top: 10px;
+}
+
+#breadcrumb li:nth-child(even) a:before {
+    border-color: #e9e9e9;
+    border-left-color: transparent;
+}
+#breadcrumb li:nth-child(even) a:after {
+    border-left-color: #e9e9e9;
+}
+#breadcrumb li:first-child a {
+    padding-left: 15px;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 0 0 4px;
+}
+#breadcrumb li:first-child a:before {
+    border: none;
+}
+#breadcrumb li:last-child a {
+    padding-right: 15px;
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 4px 4px 0;
+}
+#breadcrumb li:last-child a:after {
+    border: none;
+}
+#breadcrumb li a:before, #breadcrumb li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 0 solid #e9e9e9;
+    border-width: 28px 10px;
+    width: 0;
+    height: 0;
+}
+#breadcrumb li a:before {
+    left: -20px;
+    border-left-color: transparent;
+}
+#breadcrumb li a:after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #3498db;
+}
+#breadcrumb li a:hover {
+    background-color: #1486d3;
+    color: #fff;
+}
+#breadcrumb li a:hover:before {
+    border-color: #1486d3;
+    border-left-color: transparent;
+}
+#breadcrumb li a:hover:after {
+    border-left-color: #1486d3;
+}
+#breadcrumb li a:active {
+    background-color: #1486d3;
+}
+#breadcrumb li a:active:before {
+    border-color: #1486d3;
+    border-left-color: transparent;
+}
+#breadcrumb li a:active:after {
+    border-left-color: #1486d3;
+}
+#breadcrumb li a:hover span {
+    background-color: #fff;
+    color: #333;
+}
+#breadcrumb li a span {
+    background-color: #333;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    display: inline-block;
+    line-height: 1.6;
+    margin-right: 10px;
+}
+#breadcrumb li.active a span {
+    background-color: #0829C6;
+}
+#breadcrumb li.active a:hover span {
+    color: #fff;
+}
+/*  */
+.bg-ballet h5 {
+    background: rgba(255,233,33,0.3);
+}
+.vote-img-lg {
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.table-election th {
+    text-align: center;
+}
+.candidate-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+/*  */
+.table-election,
+.table-election th,
+.table-election td {
+    border: 1px solid #ddd;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label {
+    position: relative;
+}
+input[type="radio"] + label:before {
+    content: '';
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #bdbdbd;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 6px;
+    top: -2px;
+}
+input[type="radio"]:checked + label:before {
+    background: linear-gradient(180deg, #6a6cff 0%, #bd71ff 100%);
+}
+input[type="radio"]:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.btn {
+    min-width: 171px;
+    border-radius: 5px;
+}
+.btn-cancel {
+    background-color: #e85757;
+    box-shadow: 4px 5px 16px rgba(255, 82, 82, 0.5);
+}
+.btn-cancel:hover {
+    background-color: #e12f2f;
+}
+.btn-continue {
+    background-color: #5270FF;
+    box-shadow: 4px 5px 16px rgba(56, 79, 249, 0.5);
+}
+.btn-continue:hover {
+    background-color: #3d5df5;
+}
+body a {
+    color: #234E70;
+}
+.a-link {
+    color: #2067F0;
+}
+footer a, .a-custom {
+    text-decoration: underline;
+}
+.text-red {
+    color: #eb5757;
+}
+.div-success {
+    background-color: #D7FFD8;
+    border: 1px solid #00840D;
+    border-radius: 16px;
+    min-height: 214px;
+}
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+.progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    transition: width .6s ease;
+}
+
+.table-result tbody tr:nth-of-type(even) {
+    background-color: rgba(140, 140, 140, .08);
 }
