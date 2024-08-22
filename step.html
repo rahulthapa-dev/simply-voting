@@ -37,18 +37,18 @@
     <section class="py-2 px-4 mt-4">
         <div class="mx-auto max-w-[1024px] bg-white rounded-md p-4">
             <ul id="breadcrumb" class="w-full">
-                <li class="active"><a href="#"><span class="">1</span> Fill Ballot</a></li>
-                <li><a href="#"><span class="">2</span> Review Ballot</a></li>
-                <li><a href="#"><span class="">3</span> Done</a></li>
+                <li class="active"><a href="#"><span class="">1</span> <p class="breadcrumb-text hidden sm:inline-block">Fill Ballot</p></a></li>
+                <li><a href="#"><span class="">2</span> <p class="breadcrumb-text hidden sm:inline-block">Review Ballot</p></a></li>
+                <li><a href="#"><span class="">3</span> <p class="breadcrumb-text hidden sm:inline-block">Done</p></a></li>
             </ul>
         </div>
     </section>
     <section class="py-2 px-4 mt-4">
         <div class="mx-auto max-w-[1024px] bg-white rounded-md p-4">
             <ul id="breadcrumb" class="w-full">
-                <li class="completed"><a href="#"><span class="">1</span> Fill Ballot</a></li>
-                <li class="active"><a href="#"><span class="">2</span> Review Ballot</a></li>
-                <li><a href="#"><span class="">3</span> Done</a></li>
+                <li class="completed"><a href="#"><span class="">1</span> <p class="breadcrumb-text hidden sm:inline-block">Fill Ballot</p></a></li>
+                <li class="active"><a href="#"><span class="">2</span> <p class="breadcrumb-text hidden sm:inline-block">Review Ballot</p></a></li>
+                <li><a href="#"><span class="">3</span> <p class="breadcrumb-text hidden sm:inline-block">Done</p></a></li>
             </ul>
         </div>
     </section>
@@ -66,7 +66,7 @@
         <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
             <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Test Election 3 slate</h5>
             <!-- step 1 -->
-            <div class="p-3">
+            <div class="p-3 overflow-x-auto">
                 <table class="table-auto table-election w-full rounded-lg">
                     <thead>
                         <tr>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div>
                                     <p>Blue Party</p>
-                                    <input id="p-1" type="radio" name="vote">
+                                    <input id="p-1" type="checkbox" name="vote">
                                     <label for="p-1"></label>
                                 </div>
                             </th>
@@ -87,7 +87,7 @@
                                 </div>
                                 <div>
                                     <p>Blue Party</p>
-                                    <input id="p-2" type="radio" name="vote">
+                                    <input id="p-2" type="checkbox" name="vote">
                                     <label for="p-2"></label>
                                 </div>
                             </th>
@@ -97,7 +97,7 @@
                                 </div>
                                 <div>
                                     <p>Blue Party</p>
-                                    <input id="p-3" type="radio" name="vote">
+                                    <input id="p-3" type="checkbox" name="vote">
                                     <label for="p-3"></label>
                                 </div>
                             </th>
@@ -108,21 +108,21 @@
                             <td class="p-5 align-top">President</td>  
                             <td class="p-5 align-top">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-1" type="radio" name="president">
+                                    <input id="candidate-1" type="checkbox" name="president">
                                     <label for="candidate-1">Madonna</label>
                                     <div class="candidate-img">
                                         <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-2" type="radio" name="president">
+                                    <input id="candidate-2" type="checkbox" name="president">
                                     <label for="candidate-2">Obama</label>
                                     <div class="candidate-img">
                                         <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-3" type="radio" name="president">
+                                    <input id="candidate-3" type="checkbox" name="president">
                                     <label for="candidate-3">Elon</label>
                                     <div class="candidate-img">
                                         <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
@@ -131,25 +131,25 @@
                             </td>
                             <td class="p-5 align-top">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-4" type="radio" name="president">
+                                    <input id="candidate-4" type="checkbox" name="president">
                                     <label for="candidate-4">Michael jackson</label>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-5" type="radio" name="president">
+                                    <input id="candidate-5" type="checkbox" name="president">
                                     <label for="candidate-5">Trump</label>
                                 </div>
                             </td>
                             <td class="p-5 align-top">
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-6" type="radio" name="president">
+                                    <input id="candidate-6" type="checkbox" name="president">
                                     <label for="candidate-6">Peppa pig</label>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-7" type="radio" name="president">
+                                    <input id="candidate-7" type="checkbox" name="president">
                                     <label for="candidate-7">Dora</label>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
-                                    <input id="candidate-8" type="radio" name="president">
+                                    <input id="candidate-8" type="checkbox" name="president">
                                     <label for="candidate-8">Bob the builder</label>
                                 </div>
                             </td>

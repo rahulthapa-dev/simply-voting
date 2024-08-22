@@ -225,7 +225,7 @@ body {
     color: #fff;
 }
 /*  */
-.bg-ballet h5 {
+.bg-ballet .head {
     background: rgba(255,233,33,0.3);
 }
 .vote-img-lg {
@@ -250,13 +250,13 @@ body {
 .table-election td {
     border: 1px solid #ddd;
 }
-input[type="radio"] {
+input[type="checkbox"] {
     display: none;
 }
-input[type="radio"] + label {
+input[type="checkbox"] + label {
     position: relative;
 }
-input[type="radio"] + label:before {
+input[type="checkbox"] + label:before {
     content: '';
     -webkit-appearance: none;
     background: #fff;
@@ -271,17 +271,17 @@ input[type="radio"] + label:before {
     border-radius: 6px;
     top: -2px;
 }
-input[type="radio"]:checked + label:before {
+input[type="checkbox"]:checked + label:before {
     background: linear-gradient(180deg, #6a6cff 0%, #bd71ff 100%);
 }
-input[type="radio"]:checked + label:after {
+input[type="checkbox"]:checked + label:after {
     content: '';
     display: block;
     position: absolute;
-    top: 3px;
+    top: 4px;
     left: 7px;
-    width: 6px;
-    height: 12px;
+    width: 5px;
+    height: 11px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
@@ -289,6 +289,11 @@ input[type="radio"]:checked + label:after {
 .btn {
     min-width: 171px;
     border-radius: 5px;
+}
+@media (max-width: 500px) {
+    .btn {
+        min-width: auto;
+    }
 }
 .btn-cancel {
     background-color: #e85757;
@@ -300,6 +305,13 @@ input[type="radio"]:checked + label:after {
 .btn-continue {
     background-color: #5270FF;
     box-shadow: 4px 5px 16px rgba(56, 79, 249, 0.5);
+}
+.btn-green {
+    background-color: #27ae60;
+    box-shadow: 4px 5px 16px rgba(56, 79, 249, 0.5);
+}
+.btn-green:hover {
+    background-color: #059641;
 }
 .btn-continue:hover {
     background-color: #3d5df5;
