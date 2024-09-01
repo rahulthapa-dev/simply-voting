@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
 <body>
-    <header class="bg-white">
+    <header class="bg-white mb-4">
         <nav class="mx-auto sm:flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <a href="#" class="-m-1.5 p-1.5 text-center">
             <span class="sr-only">Your Company</span>
@@ -20,16 +20,18 @@
           </a>
           
           <div class="flex justify-center sm:justify-end gap-x-5 lg:gap-x-12">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Past Ballots</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact us</a>
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900 flex gap-2 items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-              </svg>
-              <span>English</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-              </svg>
-            </a>
+            <a href="vote-list.html" class="text-base font-normal leading-6 text-gray-900">Past Ballots</a>
+            <a href="#" class="text-base font-normal  leading-6 text-gray-900">Contact us</a>
+            <div class="relative ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 absolute top-[9px] left-0">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                <select id="countries" class="text-base font-normal leading-6 text-gray-900 border-0 focus:border-0 focus:outline-none focus:ring-0 ps-[30px]">
+                    <option value="US">English</option>
+                    <option value="CA">Dutch</option>
+                    <option value="FR">French</option>
+                </select>
+            </div>
           </div>
         </nav>
         
@@ -38,26 +40,17 @@
         <div class="mx-auto max-w-[1024px] bg-white rounded-md p-4">
             <ul id="breadcrumb" class="w-full">
                 <li class="active"><a href="#"><span class="">1</span> <p class="breadcrumb-text hidden sm:inline-block">Fill Ballot</p></a></li>
-                <li><a href="#"><span class="">2</span> <p class="breadcrumb-text hidden sm:inline-block">Review Ballot</p></a></li>
-                <li><a href="#"><span class="">3</span> <p class="breadcrumb-text hidden sm:inline-block">Done</p></a></li>
-            </ul>
-        </div>
-    </section>
-    <section class="py-2 px-4 mt-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md p-4">
-            <ul id="breadcrumb" class="w-full">
-                <li class="completed"><a href="#"><span class="">1</span> <p class="breadcrumb-text hidden sm:inline-block">Fill Ballot</p></a></li>
-                <li class="active"><a href="#"><span class="">2</span> <p class="breadcrumb-text hidden sm:inline-block">Review Ballot</p></a></li>
-                <li><a href="#"><span class="">3</span> <p class="breadcrumb-text hidden sm:inline-block">Done</p></a></li>
+                <li><a href="step-review-ballot.html"><span class="">2</span> <p class="breadcrumb-text hidden sm:inline-block">Review Ballot</p></a></li>
+                <li><a href="step-done.html"><span class="">3</span> <p class="breadcrumb-text hidden sm:inline-block">Done</p></a></li>
             </ul>
         </div>
     </section>
     <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#FAF4C5]">
+        <div class="mx-auto max-w-[1024px] bg-white rounded-md overflow-hidden bg-[#FAF4C5]">
             <div class="bg-ballet">
-                <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Ballet proof</h5>
-                <p class="p-4 text-sm">
-                    Election ID: 221771
+                <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0] bg-[#FBF2A4]">Ballet proof</h5>
+                <p class="p-4 text-sm bg-[#FAF4C5]">
+                    Votes cast using this ballot proof are not saved and receipts are not issued. To change the language, click on the language links above. To choose which ballot style to proof, select the elector's segmentation and then click the Apply button below. Please close the window when you are done.
                 </p>
             </div>
         </div>
@@ -76,7 +69,7 @@
                                     <img src="assets/img/vote-1.png" alt="">
                                 </div>
                                 <div>
-                                    <p>Blue Party</p>
+                                    <p class="font-semibold mb-2">Blue Party</p>
                                     <input id="p-1" type="checkbox" name="vote">
                                     <label for="p-1"></label>
                                 </div>
@@ -86,7 +79,7 @@
                                     <img src="assets/img/vote-1.png" alt="">
                                 </div>
                                 <div>
-                                    <p>Blue Party</p>
+                                    <p class="font-semibold mb-2">Yellow Party</p>
                                     <input id="p-2" type="checkbox" name="vote">
                                     <label for="p-2"></label>
                                 </div>
@@ -96,7 +89,7 @@
                                     <img src="assets/img/vote-1.png" alt="">
                                 </div>
                                 <div>
-                                    <p>Blue Party</p>
+                                    <p class="font-semibold mb-2">independent</p>
                                     <input id="p-3" type="checkbox" name="vote">
                                     <label for="p-3"></label>
                                 </div>
@@ -105,25 +98,25 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="p-5 align-top">President</td>  
+                            <td class="p-5 align-top font-medium">President</td>  
                             <td class="p-5 align-top">
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-1" type="checkbox" name="president">
-                                    <label for="candidate-1">Madonna</label>
+                                    <label for="candidate-1" class="font-semibold">Madonna</label>
                                     <div class="candidate-img">
                                         <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-2" type="checkbox" name="president">
-                                    <label for="candidate-2">Obama</label>
+                                    <label for="candidate-2" class="font-semibold">Obama</label>
                                     <div class="candidate-img">
                                         <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-3" type="checkbox" name="president">
-                                    <label for="candidate-3">Elon</label>
+                                    <label for="candidate-3" class="font-semibold">Elon</label>
                                     <div class="candidate-img">
                                         <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
                                     </div>
@@ -132,97 +125,73 @@
                             <td class="p-5 align-top">
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-4" type="checkbox" name="president">
-                                    <label for="candidate-4">Michael jackson</label>
+                                    <label for="candidate-4" class="font-semibold">Michael jackson</label>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-5" type="checkbox" name="president">
-                                    <label for="candidate-5">Trump</label>
+                                    <label for="candidate-5" class="font-semibold">Trump</label>
                                 </div>
                             </td>
                             <td class="p-5 align-top">
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-6" type="checkbox" name="president">
-                                    <label for="candidate-6">Peppa pig</label>
+                                    <label for="candidate-6" class="font-semibold">Peppa pig</label>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-7" type="checkbox" name="president">
-                                    <label for="candidate-7">Dora</label>
+                                    <label for="candidate-7" class="font-semibold">Dora</label>
                                 </div>
                                 <div class="flex items-center gap-2 mb-3">
                                     <input id="candidate-8" type="checkbox" name="president">
-                                    <label for="candidate-8">Bob the builder</label>
+                                    <label for="candidate-8" class="font-semibold">Bob the builder</label>
                                 </div>
                             </td>
                         </tr>
-                    </tbody>
-                </table>
-                <div class="flex justify-end gap-3 mt-5">
-                    <button class="px-5 py-2 rouned-lg text-white btn btn-cancel">Cancel</button>
-                    <button class="px-5 py-2 rouned-lg text-white btn btn-continue">Continue</button>
-                </div>
-            </div>
-            <!-- step 2 -->
-            <div class="p-3">
-                <table class="table-auto table-election w-full rounded-lg">
-                    <tbody>
                         <tr>
-                            <td class="p-5 align-top w-1/2">
-                                <p>Where Do you live?</p>
-                                <p class="text-red">Note: You are allowed to select additional options.</p>
-                            </td>  
-                            <td class="p-5 align-top w-1/2">
-                                <p>Tokyo</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 align-top w-1/2">
-                                <p>Rank your favorite movie:</p>
-                            </td>  
-                            <td class="p-5 align-top w-1/2">
-                                <p>1) Barbie</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="p-5 align-top w-1/2">
-                                <p>Do you like Pasta?</p>
-                            </td>  
-                            <td class="p-5 align-top w-1/2">
-                                <p>No</p>
-                            </td>
-                        </tr>
-                        <tr>
+                            <td class="p-5 align-top font-medium">Vice President</td>  
                             <td class="p-5 align-top">
-                                <p>Who is your favorite colleague?</p>
-                            </td>  
-                            <td class="p-5 align-top">
-                                <p>John D</p>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <input id="candidate-1" type="checkbox" name="president">
+                                    <label for="candidate-1" class="font-semibold">Madonna</label>
+                                    <div class="candidate-img">
+                                        <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <input id="candidate-2" type="checkbox" name="president">
+                                    <label for="candidate-2" class="font-semibold">Obama</label>
+                                    <div class="candidate-img">
+                                        <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <input id="candidate-3" type="checkbox" name="president">
+                                    <label for="candidate-3" class="font-semibold">Elon</label>
+                                    <div class="candidate-img">
+                                        <img src="assets/img/medonna.png" alt="candidate-img" class="img-fluid">
+                                    </div>
+                                </div>
                             </td>
-                        </tr>
-                        <tr>
                             <td class="p-5 align-top">
-                                <p>Who is your favorite Singer?</p>
-                            </td>  
+                                <div class="flex items-center gap-2 mb-3">
+                                    <input id="candidate-4" type="checkbox" name="president">
+                                    <label for="candidate-4" class="font-semibold">Michael jackson</label>
+                                </div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <input id="candidate-5" type="checkbox" name="president">
+                                    <label for="candidate-5" class="font-semibold">Trump</label>
+                                </div>
+                            </td>
                             <td class="p-5 align-top">
-                                <p class="text-red">Abstain</p>
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="flex justify-end gap-3 mt-5">
                     <button class="px-5 py-2 rouned-lg text-white btn btn-cancel">Cancel</button>
-                    <button class="px-5 py-2 rouned-lg text-white btn btn-continue">Continue</button>
+                    <a href="step-review-ballot.html" class="px-5 text-center py-2 rouned-lg text-white btn btn-continue">Continue</a>
                 </div>
             </div>
-            <!-- completed -->
-             <div class="p-3">
-                <div class="div-success flex text-center align-center justify-center flex-wrap py-5">
-                    <div>
-                        <img src="./assets/img/tabler_circle-check-filled.png" alt="check-icon" class="mx-auto">
-                    </div>
-                    <h2 class="text-2xl w-full">Success</h2>
-                    <p>Your vote has been recorded. You may view your voitng reciept below.</p>
-                </div>
-             </div>
             <footer class="p-4 text-center mt-5">
                 <div>
                     This is the online voting system of <a href="">Your Organization. </a>

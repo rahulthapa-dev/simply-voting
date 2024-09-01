@@ -96,13 +96,18 @@ body {
     border-left-color:#09813C;
 }
 /* .active */
-#breadcrumb li.active:nth-child(even) a:before {
-    border-color: #3498db;
+#breadcrumb li.active:nth-child(even) a:before, #breadcrumb li.active:last-child a:before {
+    border-color: #5270FF;
     border-left-color: transparent;
     top: -1px;
 }
+#breadcrumb li.active:last-child:hover a:before {
+    border-color: #1486d3;
+    border-left-color: transparent;
+}
+
 #breadcrumb li.active:nth-child(even) a:after {
-    border-left-color: #3498db;
+    border-left-color: #5270FF;
 }
 #breadcrumb li.active:nth-child(even) a:hover:before {
     border-color: #1486d3;
@@ -115,7 +120,7 @@ body {
 #breadcrumb li.active a {
     color: #FFF;
     display: block;
-    background: #3498db;
+    background: #5270FF;
     text-decoration: none;
     position: relative;
     height: 56px;
@@ -124,7 +129,7 @@ body {
     text-align: center;
     margin-right: 23px;
     margin-top: 10px;
-    border: 1px solid #3498db;
+    border: 1px solid #5270FF;
 }
 #breadcrumb li a {
     color: #333;
@@ -147,6 +152,20 @@ body {
 #breadcrumb li:nth-child(even) a:after {
     border-left-color: #e9e9e9;
 }
+#breadcrumb li.completed:nth-child(even) a:before {
+    border-color: #27ae60;
+    border-left-color: transparent;
+}
+#breadcrumb li.completed:nth-child(even) a:after {
+    border-left-color: #27ae60;
+}
+#breadcrumb li.completed:nth-child(even):hover a:before {
+    border-color: #09813C;
+    border-left-color: transparent;
+}
+#breadcrumb li.completed:nth-child(even):hover a:after {
+    border-left-color: #09813C;
+}
 #breadcrumb li:first-child a {
     padding-left: 15px;
     -moz-border-radius: 4px 0 0 4px;
@@ -162,6 +181,7 @@ body {
     -webkit-border-radius: 0;
     border-radius: 0 4px 4px 0;
 }
+
 #breadcrumb li:last-child a:after {
     border: none;
 }
@@ -181,7 +201,7 @@ body {
 #breadcrumb li a:after {
     left: 100%;
     border-color: transparent;
-    border-left-color: #3498db;
+    border-left-color: #5270FF;
 }
 #breadcrumb li a:hover {
     background-color: #1486d3;
@@ -217,6 +237,7 @@ body {
     display: inline-block;
     line-height: 1.6;
     margin-right: 10px;
+    font-weight: 600;
 }
 #breadcrumb li.active a span {
     background-color: #0829C6;
@@ -226,7 +247,7 @@ body {
 }
 /*  */
 .bg-ballet .head {
-    background: rgba(255,233,33,0.3);
+    background: #FBF2A4;
 }
 .vote-img-lg {
     margin: 0 auto;
@@ -262,7 +283,7 @@ input[type="checkbox"] + label:before {
     background: #fff;
     border: 1px solid #bdbdbd;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-    padding: 8px;
+    padding: 14px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -278,10 +299,10 @@ input[type="checkbox"]:checked + label:after {
     content: '';
     display: block;
     position: absolute;
-    top: 4px;
-    left: 7px;
-    width: 5px;
-    height: 11px;
+    top: 0px;
+    left: 11px;
+    width: 8px;
+    height: 19px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
@@ -363,4 +384,7 @@ footer a, .a-custom {
 
 .table-result tbody tr:nth-of-type(even) {
     background-color: rgba(140, 140, 140, .08);
+}
+.cursor-pointer {
+    cursor: pointer;
 }
