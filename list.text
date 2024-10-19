@@ -1,0 +1,41 @@
+
+
+On voting screens, we need to add the logout button (or link) currently found in the header. It should show the voter's name somewhere too, which is helpful when multiple people share a computer to vote. - done
+
+On login form and vote-setup.html, please make the text in input fields bigger and/or bolder - done
+
+On vote-setup.html we would like the "Show more" link on a new line and aligned to the right, so it is clearly a UI element and not part of the text. Perhaps it should be a button or blue or underlined?? - done
+
+On vote-setup.html could we bold question titles or make text larger or apply highlighting to their cells? To make them stand out more - done
+
+On vote-setup.html could we move instructions up into the title's cell? - Done
+
+On vote-setup.html could we panelize the ballot, so the background colour surrounds each question, like we currently have? We find it too hard to tell when questions begin and end. - Done
+
+
+
+On step-review-ballot.html please move the instructions up above the selections. Change background colour to blue instead of yellow (the colour used for ballot proof elements) so the user doesn't think it's a proofing element. Also make instructions shorter: You're not done. Please review your choices and  click "Confirm". - Done
+
+On results.html please give more emphasis to the election name. Question name should have less emphasis than election name, but more emphasis than "Voter Summary". Please remove the red background of Abstain, it puts too much negative emphasis on that value making it seem like a problem. - done
+
+
+
+On vote-list.html, please add a title to name this page "Dashboard" and remove "Past ballots" panel.  - Done
+
+-----------------
+On the login screen, the header shows org name and the logo is above the login form. 
+On voting screens, the header contains the logo but not the org name. I would like the org name to be present on every page. Also some customers do not upload logos, so we need a design for that scenario.
+
+On results.html could you make the results generally more compact, and/or panelize the results, so the background colour surrounds each question? 
+
+On vote-setup.html could we add a hover effect when you mouse-over an option like this example: https://halifax-demo.simplyvoting.com/vote.php?mode=getBallot&election=242390
+
+We would like to change our approach to voting errors entirely. Instead of giving a modal on the first error encountered (vote-setup-modal.html), we will return all errors found. Show a summary of all errors as well as individual error message at the question level, like the example attached.
+
+On vote-list.html, Upcoming ballots cannot be clicked on. 
+
+On ,
+In the header, please rename "Past Ballots" to "Published Results" and make it show just the past ballots list with each one linking to the results. You do not need to be logged in to see the results. I do not have a preference if it opens a modal or not.
+
+When logged in, there always needs to be a way to get back to the Dashboard when you submit a ballot (step-done.html) or view a receipt or view published results (past ballots listing and results.html). This can be accomplished by adding Dashboard to header navigation menu, or by adding a button or link to return to Dashboard on those pages.
+When not logged in there always needs to be a way to get back to the login form when you view published results (past ballots listing and results.html). This can be accomplished by adding Login to header navigation menu, or by adding a button or link to return to the login form on those pages.

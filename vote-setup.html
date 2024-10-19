@@ -49,9 +49,9 @@
                         Votes cast using this ballot proof are not saved and receipts are not issued. To change the language, click on the language links above. To choose which ballot style to proof, select the elector's segmentation and then click the Apply button below. Please close the window when you are done.
                     </p>
                     <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
-                        <p class="p-4 border-b-[1px] border-[#e0e0e0] text-base">
-                            Segmentation
-                        </p>
+                        <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                            <p class="text-black text-base font-semibold ">Segmentation</p>
+                        </div>
                         <div class="p-4">
                             <div class="sm:flex flex-wrap">
                                 <div class="sm:w-1/4 mb-2 sm:mb-0">
@@ -77,11 +77,11 @@
         </div>
     </section>
     <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff] text-sm">
+        <div class="mx-auto max-w-[1024px] rounded-md bg-[#f5f5f5] text-sm">
             <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Test Election 3 slate</h5>
             <div class="p-4">
-                <div class="border border-[#e0e0e0] rounded-md p-3">
-                    <p>Hello <span class="font-semibold">John Doe</span>,</p>
+                <div class="border border-[#e0e0e0] rounded-md p-3 bg-white">
+                    <p class="mb-3">Hello <span class="font-semibold">John Doe</span>,</p>
                     <p>Votes cast using this ballot proof are not saved and receipts are not issued. </p>
                     <p>The turnout of this election so far is 0.0</p>
                 </div>
@@ -90,232 +90,237 @@
                     <label for="decline" class="font-bold uppercase">I Decline to vote</label>
                 </div>
                 <!--  -->
-                <div class="border border-[#e0e0e0] mt-3 rounded-md">
-                    <p class="p-4 border-b-[1px] border-[#e0e0e0] text-base">
-                        Where do you live?
-                    </p>
-                    <div class="p-4">
-                        <p>You may select <span class="font-bold">up to 4</span> of the following</p>
-                        <p>To write-in your vote, select Write-in and then type out your choice.</p>
+                <div>
+                    <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                        <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                            <p class="text-black text-base font-semibold mb-3">Where do you live?</p>
+                            <p>You may select <span class="font-bold">up to 4</span> of the following</p>
+                            <p>To write-in your vote, select Write-in and then type out your choice.</p>
+                        </div>
+                        <!-- <div class="p-4">
+                            
+                        </div> -->
+                        <div class="w-full divide-y divide-solid">
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div>
+                                    <input type="checkbox" name="" id="opt">
+                                    <label for="opt"></label>
+                                </div>
+                                <div class="mb-2 sm:mb-0">
+                                    <p class="line-through font-bold font-sm text-[#333]">Monteral</p>
+                                    <p class="uppercase font-semibold text-[#eb5757]">withdrawn</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/monteral.png" alt="candidate-img" class="w-full">
+                                </div>
+                            </div>
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div>
+                                    <input type="checkbox" name="" id="opt2">
+                                    <label for="opt2"></label>
+                                </div>
+                                <div class="mb-2 sm:mb-0">
+                                    <p class="uppercase font-semibold text-[#333]">London</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/london.png" alt="candidate-img" class="w-full">
+                                </div>
+                            </div>
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div>
+                                    <input type="checkbox" name="" id="opt3">
+                                    <label for="opt3"></label>
+                                </div>
+                                <div class="mb-2 sm:mb-0">
+                                    <p class="uppercase font-semibold text-[#333]">New York</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/new-york.png" alt="candidate-img" class="w-full">
+                                </div>
+                            </div>
+                            <div class="w-full p-4">
+                                <div class="md:w-3/4 md:flex">
+                                    <div class="w-[150px] mb-2 md:mb-0">
+                                        <input type="checkbox" name="" id="write-1">
+                                        <label for="write-1" class="capitalize font-normal text-[#333]">Write-in</label>
+                                    </div>
+                                    <input type="text" name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                                <div class="md:w-3/4 md:flex mt-4">
+                                    <div class="w-[150px] mb-2 md:mb-0">
+                                        <input type="checkbox" name="" id="write-2">
+                                        <label for="write-2" class="capitalize text-[#333]">Write-in</label>
+                                    </div>
+                                    <input type="text" name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w-full divide-y divide-solid">
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div>
-                                <input type="checkbox" name="" id="opt">
-                                <label for="opt"></label>
+                    <!--  -->
+                    <!-- <div class="border-t border-[#e0e0e0] mt-3 mb-3"></div> -->
+                    <!--  -->
+                    <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                        <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                            <p class="text-black text-base font-semibold mb-3">Rank your favorite movies</p>
+                            <p>You may rank any of the following in order of preference.</p>
+                            <p>Click on any view details link to view more information</p>
+                        </div>
+                        <!-- <div class="p-4"></div> -->
+                        <div class="w-full divide-y divide-solid">
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div class="min-w-[140px] mb-2 sm:mb-0">
+                                    <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></select>
+                                </div>
+                                <div>
+                                    <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Avatar</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/avatar.png" alt="candidate-img" class="w-full">
+                                </div>
                             </div>
-                            <div class="mb-2 sm:mb-0">
-                                <p class="line-through font-bold font-sm text-[#333]">Monteral</p>
-                                <p class="uppercase font-semibold text-[#eb5757]">withdrawn</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div class="min-w-[140px] mb-2 sm:mb-0">
+                                    <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></select>
+                                </div>
+                                <div>
+                                    <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Titanic</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/titanic.png" alt="candidate-img" class="w-full">
+                                </div>
                             </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/monteral.png" alt="candidate-img" class="w-full">
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div class="min-w-[140px] mb-2 sm:mb-0">
+                                    <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></select>
+                                </div>
+                                <div>
+                                    <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Kill Bill</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/kill-bill.png" alt="candidate-img" class="w-full">
+                                </div>
                             </div>
                         </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div>
-                                <input type="checkbox" name="" id="opt2">
-                                <label for="opt2"></label>
+                    </div>
+                    <!--  -->
+                    <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                        <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                            <p class="text-black text-base font-semibold mb-3">Who is your favorite collegue?</p>
+                            <div class="flex items-center rounded-md text-[#333] border border-[#FFE921] bg-[#FFE921]/35 p-4 mb-3">
+                                <img src="assets/img/alert2.png" alt="alert" class="me-2"><p>Restricted to MAN. This does not appear on the real ballot.</p>
                             </div>
-                            <div class="mb-2 sm:mb-0">
-                                <p class="uppercase font-semibold text-[#333]">London</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
-                            </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/london.png" alt="candidate-img" class="w-full">
+                            <p>You may select one of the following.</p>
+                        </div>
+                        <!-- <div class="p-4"></div> -->
+                        <!-- <div class="pt-0 p-4">
+                            
+                        </div> -->
+                        <div class="w-full divide-y divide-solid">
+                            <div class="pt-0 p-4">
+                                <div class="flex items-center max-w-lg gap-x-4 w-full mt-3">
+                                    <label for="">Nominee</label>
+                                    <div class="w-full"><input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div>
-                                <input type="checkbox" name="" id="opt3">
-                                <label for="opt3"></label>
+                    </div>
+                    <!--  -->
+                    <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                        <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                            <p class="text-black text-base font-semibold mb-3">Do you like pasta?</p>
+                            <div class="flex items-center rounded-md text-[#333] border border-[#FFE921] bg-[#FFE921]/35 p-4 mb-3">
+                                <img src="assets/img/alert2.png" alt="alert" class="me-2"><p>Restricted to MAN. This does not appear on the real ballot.</p>
                             </div>
-                            <div class="mb-2 sm:mb-0">
-                                <p class="uppercase font-semibold text-[#333]">New York</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
+                            <p>You may specify one nominee. Start typing the name of the person you would like to nominate, and select it from the list.
+                            </p>
+                        </div>
+                        <!-- <div class="p-4">
+                            
+                        </div> -->
+                        <div class="w-full divide-y divide-solid">
+                            <div class="sm:flex p-4 gap-x-4">
+                                <input type="checkbox" id="yes">
+                                <label for="yes" class="font-semibold text-[#333]">Yes</label>
                             </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/new-york.png" alt="candidate-img" class="w-full">
+                            <div class="sm:flex p-4 gap-x-4">
+                                <input type="checkbox" id="no">
+                                <label for="no" class="font-semibold text-[#333]">No</label>
+                            </div>
+                            <div class="sm:flex p-4 gap-x-4">
+                                <input type="checkbox" id="abstain">
+                                <label for="abstain" class="font-semibold text-[#333]">Abstain</label>
                             </div>
                         </div>
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                        <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                            <p class="text-black text-base font-semibold mb-3">Hakuna Matata</p>
+                            <!--  -->
+                            <p>You may type your response.</p>
+                        </div>
+                        <!-- <div class="p-4">
+                            
+                        </div> -->
                         <div class="w-full p-4">
-                            <div class="md:w-3/4 md:flex">
-                                <div class="w-[150px] mb-2 md:mb-0">
-                                    <input type="checkbox" name="" id="write-1">
-                                    <label for="write-1" class="capitalize font-normal text-[#333]">Write-in</label>
+                            <textarea name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                        </div>
+                    </div>
+                     <!--  -->
+                     <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                        <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                            <p class="text-black text-base font-semibold mb-3">Best pet</p>
+                            <p>You have 12.5 points to allocate.</p>
+                            <p>
+                                You may allocate votes to any of the following. You have allocated a total of 0 points to this question.
+                            </p>
+                        </div>
+                        <!-- <div class="p-4">
+                            
+                        </div> -->
+                        <div class="w-full divide-y divide-solid">
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div class="min-w-[140px] mb-2 sm:mb-0">
+                                    <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
                                 </div>
-                                <input type="text" name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                            </div>
-                            <div class="md:w-3/4 md:flex mt-4">
-                                <div class="w-[150px] mb-2 md:mb-0">
-                                    <input type="checkbox" name="" id="write-2">
-                                    <label for="write-2" class="capitalize text-[#333]">Write-in</label>
+                                <div>
+                                    <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Dog</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
                                 </div>
-                                <input type="text" name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/dog.png" alt="candidate-img" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="border border-[#e0e0e0] mt-3 rounded-md">
-                    <p class="p-4 border-b-[1px] border-[#e0e0e0] text-base">
-                        Rank your favorite movies
-                    </p>
-                    <div class="p-4">
-                        <p>You may rank any of the following in order of preference.</p>
-                        <p>Click on any view details link to view more information</p>
-                    </div>
-                    <div class="w-full divide-y divide-solid">
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div class="min-w-[140px] mb-2 sm:mb-0">
-                                <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></select>
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div class="min-w-[140px] mb-2 sm:mb-0">
+                                    <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                </div>
+                                <div>
+                                    <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Cat</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/cat.png" alt="candidate-img" class="w-full">
+                                </div>
                             </div>
-                            <div>
-                                <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Avatar</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
-                            </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/avatar.png" alt="candidate-img" class="w-full">
-                            </div>
-                        </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div class="min-w-[140px] mb-2 sm:mb-0">
-                                <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></select>
-                            </div>
-                            <div>
-                                <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Titanic</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
-                            </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/titanic.png" alt="candidate-img" class="w-full">
-                            </div>
-                        </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div class="min-w-[140px] mb-2 sm:mb-0">
-                                <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></select>
-                            </div>
-                            <div>
-                                <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Kill Bill</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
-                            </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/kill-bill.png" alt="candidate-img" class="w-full">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="border border-[#e0e0e0] mt-3 rounded-md">
-                    <p class="p-4 border-b-[1px] border-[#e0e0e0] text-base">
-                        Who is your favorite collegue?
-                    </p>
-                    <div class="p-4">
-                        <div class="flex items-center rounded-md text-[#333] border border-[#FFE921] bg-[#FFE921]/35 p-4">
-                            <img src="assets/img/alert2.png" alt="alert" class="me-2"><p>Restricted to MAN. This does not appear on the real ballot.</p>
-                        </div>
-                    </div>
-                    <div class="pt-0 p-4">
-                        <p>You may select one of the following.</p>
-                    </div>
-                    <div class="w-full divide-y divide-solid">
-                        <div class="pt-0 p-4">
-                            <div class="flex items-center max-w-lg gap-x-4 w-full">
-                                <label for="">Nominee</label>
-                                <div class="w-full"><input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <div class="border border-[#e0e0e0] mt-3 rounded-md">
-                    <p class="p-4 border-b-[1px] border-[#e0e0e0] text-base">
-                        Do you like pasta?
-                    </p>
-                    <div class="p-4">
-                        <div class="flex items-center rounded-md text-[#333] border border-[#FFE921] bg-[#FFE921]/35 p-4">
-                            <img src="assets/img/alert2.png" alt="alert" class="me-2"><p>Restricted to MAN. This does not appear on the real ballot.</p>
-                        </div>
-                    </div>
-                    <div class="pt-0 p-4">
-                        <p>You may specify one nominee. Start typing the name of the person you would like to nominate, and select it from the list.
-                        </p>
-                    </div>
-                    <div class="w-full divide-y divide-solid">
-                        <div class="sm:flex pt-0 p-4 gap-x-4">
-                            <input type="checkbox" id="yes">
-                            <label for="yes" class="font-semibold text-[#333]">Yes</label>
-                        </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <input type="checkbox" id="no">
-                            <label for="no" class="font-semibold text-[#333]">No</label>
-                        </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <input type="checkbox" id="abstain">
-                            <label for="abstain" class="font-semibold text-[#333]">Abstain</label>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-                <!--  -->
-                <div class="border border-[#e0e0e0] mt-3 rounded-md">
-                    <p class="p-4 border-b-[1px] border-[#e0e0e0] text-base">
-                        Hakuna Matata
-                    </p>
-                    <div class="p-4">
-                        <p>You may type your response.</p>
-                    </div>
-                    <div class="w-full pt-0 p-4">
-                        <textarea name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-                    </div>
-                </div>
-                 <!--  -->
-                 <div class="border border-[#e0e0e0] mt-3 rounded-md">
-                    <p class="p-4 border-b-[1px] border-[#e0e0e0] text-base">
-                        Best pet
-                    </p>
-                    <div class="p-4">
-                        <p>You have 12.5 points to allocate.</p>
-                        <p>
-                            You may allocate votes to any of the following. You have allocated a total of 0 points to this question.
-                        </p>
-                    </div>
-                    <div class="w-full divide-y divide-solid">
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div class="min-w-[140px] mb-2 sm:mb-0">
-                                <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                            </div>
-                            <div>
-                                <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Dog</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
-                            </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/dog.png" alt="candidate-img" class="w-full">
-                            </div>
-                        </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div class="min-w-[140px] mb-2 sm:mb-0">
-                                <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                            </div>
-                            <div>
-                                <p class="uppercase font-semibold text-[#333] mb-2 sm:mb-0">Cat</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
-                            </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/cat.png" alt="candidate-img" class="w-full">
-                            </div>
-                        </div>
-                        <div class="sm:flex p-4 gap-x-4">
-                            <div class="min-w-[140px] mb-2 sm:mb-0">
-                                <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                            </div>
-                            <div>
-                                <p class="uppercase font-semibold text-[#333] mb-2 md:mb-0">Fish</p>
-                                <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <span class="font-bold cursor-pointer">Show more</span></p>
-                            </div>
-                            <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
-                                <img src="assets/img/fish.png" alt="candidate-img" class="w-full">
+                            <div class="sm:flex p-4 gap-x-4">
+                                <div class="min-w-[140px] mb-2 sm:mb-0">
+                                    <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+                                </div>
+                                <div>
+                                    <p class="uppercase font-semibold text-[#333] mb-2 md:mb-0">Fish</p>
+                                    <p>On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, <br/><span class="font-bold cursor-pointer underline text-sky-500">Show more</span></p>
+                                </div>
+                                <div class="min-w-[100px] w-[100px] h-[100px] inline-block">
+                                    <img src="assets/img/fish.png" alt="candidate-img" class="w-full">
+                                </div>
                             </div>
                         </div>
                     </div>

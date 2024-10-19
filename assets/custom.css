@@ -388,3 +388,31 @@ footer a, .a-custom {
 .cursor-pointer {
     cursor: pointer;
 }
+/*  */
+.user-initial {
+    height: 48px;
+    width: 48px;
+    border-radius: 25px;
+    background-color: #2067F0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fff;
+}
+.c-dropdown {
+    height: 28px;
+    color: #111827;
+}
+.menu-item:hover {
+    background-color: #f7f7f7;
+}
+/*  */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+section select {
+    font-size: 17px;
+    height: 46px;
+    font-weight: 600;
+}
