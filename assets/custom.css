@@ -385,6 +385,10 @@ footer a, .a-custom {
 .table-result tbody tr:nth-of-type(even) {
     background-color: rgba(140, 140, 140, .08);
 }
+.table-result th, .table-result td {
+    padding: 8px;
+    font-size: 14px;
+}
 .cursor-pointer {
     cursor: pointer;
 }
@@ -415,4 +419,7 @@ section select {
     font-size: 17px;
     height: 46px;
     font-weight: 600;
+}
+.btn.btn-header {
+    min-width: 110px;
 }
