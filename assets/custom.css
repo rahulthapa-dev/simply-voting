@@ -299,7 +299,7 @@ input[type="checkbox"]:checked + label:after {
     content: '';
     display: block;
     position: absolute;
-    top: 0px;
+    top: -3px;
     left: 11px;
     width: 8px;
     height: 19px;
@@ -394,15 +394,15 @@ footer a, .a-custom {
 }
 /*  */
 .user-initial {
-    height: 48px;
-    width: 48px;
-    border-radius: 25px;
-    background-color: #2067F0;
+    /* height: 48px;
+    width: 48px; */
+    /* border-radius: 25px; */
+    /* background-color: #2067F0; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    color: #fff;
+    font-weight: 500;
+    /* color: #fff; */
 }
 .c-dropdown {
     height: 28px;
@@ -418,8 +418,11 @@ input[type="password"],
 section select {
     font-size: 17px;
     height: 46px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .btn.btn-header {
     min-width: 110px;
+}
+.divide-logo .logo-1 {
+    border-right: 1px solid #b5b5b5;
 }

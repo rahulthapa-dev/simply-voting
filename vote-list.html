@@ -13,13 +13,19 @@
 <body>
     <header class="bg-white mb-4">
         <nav class="mx-auto sm:flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <a href="javascript:void(0)" class="-m-1.5 p-1.5 text-center">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto mx-auto sm:mx-0" src="assets/img/login-company.png" alt="">
-            <p class="text-sm">Online Voting</p>
-          </a>
+            <div class="flex align-items-center flex-nowrap items-center divide-logo">
+                <a href="javascript:void(0)" class="-m-1.5 p-1.5 text-center logo-1 me-3 pe-3">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto mx-auto sm:mx-0" src="assets/img/login-company.png" alt="">
+                    <p class="text-sm font-semibold">Online Voting</p>
+                </a>
+                <div>
+                    <h2 class="text-lg font-semibold">Company Name</h2>
+                </div>
+            </div>
           
           <div class="flex items-center justify-center sm:justify-end gap-x-5 lg:gap-x-12 items-center">
+            <a href="vote-list.html#past-ballots" class="text-base font-normal leading-6 text-gray-900">Dashboard</a>
             <a href="vote-list.html#past-ballots" class="text-base font-normal leading-6 text-gray-900">Past Ballots</a>
             <a href="javascript:void(0)" class="text-base font-normal  leading-6 text-gray-900">Contact us</a>
             <div class="relative ">
@@ -32,11 +38,10 @@
                     <option value="FR">French</option>
                 </select>
             </div>
-            <a href="index.html" class="px-5 py-2 rouned-lg text-white btn btn-continue text-center btn-header">Login</a>
             <div class="relative inline-block text-left">
                 <div>
                   <button id="dropdownButton" type="button" class="items-center inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white ps-0 pe-3 py-2 text-base font-normal leading-6 text-gray-900 border-0 focus:border-0 focus:outline-none focus:ring-0" onclick="myFunction()" aria-expanded="true" aria-haspopup="true">
-                    <span class="user-initial uppercase">JD</span>
+                    <span class="user-initial">John Doe</span>
                     <svg class="-mr-1 c-dropdown text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                     </svg>
@@ -44,15 +49,6 @@
                 </div>
                 <div id="dropdownMenu" class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                     <div class="py-1" role="none">
-                        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 menu-item" role="menuitem" tabindex="-1" id="menu-item-0">
-                            <div class="flex items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                            </svg>
-                            <span>John Doe</span>
-                            </div>
-                        </a>
                         <form method="POST" action="#" role="none">
                             <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-700 menu-item" role="menuitem" tabindex="-1" id="menu-item-3">
                                 <div class="flex items-center gap-3">
@@ -70,90 +66,120 @@
         </nav>
     </header>
     <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
-            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Dashboard</h5>
-            <!-- step 1 -->
+        <div class="mx-auto max-w-[1024px] rounded-md bg-[#f5f5f5] text-sm overflow-hidden">
+            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0] bg-white">Dashboard</h5>
             <div class="p-4">
-                <p class="mb-3">You are registered to vote in the following ballots</p> 
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/check.png" alt="check"></span>
-                    <p>Already voted - Election 2024</p>
+                <!--  -->
+                <div class="border border-[#e0e0e0] rounded-md bg-white">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Current ballots</p>
+                    </div>
+                    <!-- <div class="p-4"></div> -->
+                    <div class="w-full divide-y divide-solid">
+                        <!-- step 1 -->
+                        <div class="p-4">
+                            <p class="mb-3">You are registered to vote in the following ballots</p> 
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/check.png" alt="check"></span>
+                                <p>Already voted - Election 2024</p>
+                            </div>
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/alert.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">You need to vote!!</span> - Company President 2024</a>
+                            </div>   
+                        </div>
+                    </div>
                 </div>
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/alert.png" alt="alert"></span>
-                    <a href="" class="a-custom a-link "><span class="font-semibold">You need to vote!!</span> - Company President 2024</a>
-                </div>   
-            </div>
-        </div>
-    </section>
-    <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
-            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Voting receipts</h5>
-            <!-- step 1 -->
-            <div class="p-4">
-                <p class="mb-3">You have voted in the follwoing ballots:</p> 
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/receipt.png" alt="alert"></span>
-                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2024</a>
-                </div>   
-            </div>
-        </div>
-    </section>
-    <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
-            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Upcoming ballots</h5>
-            <!-- step 1 -->
-            <div class="p-4">
-                <p class="mb-3">You are registered to vote in the following ballots that have not yet started:</p> 
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/future.png" alt="future"></span>
-                    <a class=""><span class="font-semibold">Election 1 </span> - Election 2025</a>
-                </div>   
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/future.png" alt="future"></span>
-                    <a class=""><span class="font-semibold">Election 2 </span> - Election 2025</a>
-                </div>   
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/future.png" alt="future"></span>
-                    <a class=""><span class="font-semibold">Election 3 </span> - Election 2025</a>
-                </div>  
-            </div>
-        </div>
-    </section>
-    <!--  -->
-    <section id="past-ballots" class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
-            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Published Results</h5>
-            <!-- step 1 -->
-            <div class="p-4">
-                <p class="mb-3">You have voted in the follwoing ballots:</p> 
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/past.png" alt="alert"></span>
-                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2023</a>
-                </div>   
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/past.png" alt="alert"></span>
-                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2022</a>
-                </div>   
-                <div class="flex items-center gap-2 mb-3">
-                    <span><img src="assets/img/past.png" alt="alert"></span>
-                    <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2020</a>
-                </div>  
-            </div>
-            
-            <footer class="p-4 text-center mt-5">
-                <div>
-                    This is the online voting system of <a href="">Your Organization. </a>
+                <!--  -->
+                <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Voting receipts</p>
+                    </div>
+                    <!-- <div class="p-4"></div> -->
+                    <div class="w-full divide-y divide-solid">
+                        <!---->
+                        <div class="p-4">
+                            <p class="mb-3">You have voted in the follwoing ballots:</p> 
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/receipt.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2024</a>
+                            </div>   
+                        </div>
+                    </div>
                 </div>
-                <div class="flex gap-3 justify-center mt-5">
-                    <span>Powered by</span>
-                    <a href="">
-                        <img src="assets/img/logo.png" alt="logo">
-                    </a>
+                <!--  -->
+                <!--  -->
+                <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Upcoming ballots</p>
+                    </div>
+                    <!-- <div class="p-4"></div> -->
+                    <div class="w-full divide-y divide-solid">
+                        <!---->
+                        <div class="p-4">
+                            <p class="mb-3">You are registered to vote in the following ballots that have not yet started:</p> 
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/future.png" alt="future"></span>
+                                <a class=""><span class="font-semibold">Election 1 </span> - Election 2025</a>
+                            </div>   
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/future.png" alt="future"></span>
+                                <a class=""><span class="font-semibold">Election 2 </span> - Election 2025</a>
+                            </div>   
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/future.png" alt="future"></span>
+                                <a class=""><span class="font-semibold">Election 3 </span> - Election 2025</a>
+                            </div>  
+                        </div>
+                    </div>
                 </div>
-            </footer>
+                <!--  -->
+                <!--  -->
+                <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Published Results</p>
+                    </div>
+                    <!-- <div class="p-4"></div> -->
+                    <div class="w-full divide-y divide-solid">
+                        <!---->
+                        <div class="p-4">
+                            <p class="mb-3">You have voted in the follwoing ballots:</p> 
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/past.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2023</a>
+                            </div>   
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/past.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2022</a>
+                            </div>   
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/past.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2020</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <section class="py-2 px-4">
+                    <div class="mx-auto max-w-[1024px] rounded-md">
+                        <footer class="p-4 text-center mt-5">
+                            <div>
+                                This is the online voting system of <a href="">Your Organization. </a>
+                            </div>
+                            <div class="flex gap-3 justify-center mt-5">
+                                <span>Powered by</span>
+                                <a href="">
+                                    <img src="assets/img/logo.png" alt="logo">
+                                </a>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+            </div>
         </div>
     </section>
+    
     <script src="assets/js/custom.js"></script>
 </body>
 </html>

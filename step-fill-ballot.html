@@ -13,13 +13,19 @@
 <body>
     <header class="bg-white mb-4">
         <nav class="mx-auto sm:flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <a href="javascript:void(0)" class="-m-1.5 p-1.5 text-center">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto mx-auto sm:mx-0" src="assets/img/login-company.png" alt="">
-            <p class="text-sm">Online Voting</p>
-          </a>
+            <div class="flex align-items-center flex-nowrap items-center divide-logo">
+                <a href="javascript:void(0)" class="-m-1.5 p-1.5 text-center logo-1 me-3 pe-3">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto mx-auto sm:mx-0" src="assets/img/login-company.png" alt="">
+                    <p class="text-sm font-semibold">Online Voting</p>
+                </a>
+                <div>
+                    <h2 class="text-lg font-semibold">Company Name</h2>
+                </div>
+            </div>
           
           <div class="flex justify-center sm:justify-end gap-x-5 lg:gap-x-12 items-center">
+            <a href="vote-list.html#past-ballots" class="text-base font-normal leading-6 text-gray-900">Dashboard</a>
             <a href="vote-list.html#past-ballots" class="text-base font-normal leading-6 text-gray-900">Past Ballots</a>
             <a href="javascript:void(0)" class="text-base font-normal  leading-6 text-gray-900">Contact us</a>
             <div class="relative ">
@@ -31,6 +37,30 @@
                     <option value="CA">Dutch</option>
                     <option value="FR">French</option>
                 </select>
+            </div>
+            <div class="relative inline-block text-left">
+                <div>
+                  <button id="dropdownButton" type="button" class="items-center inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white ps-0 pe-3 py-2 text-base font-normal leading-6 text-gray-900 border-0 focus:border-0 focus:outline-none focus:ring-0" onclick="myFunction()" aria-expanded="true" aria-haspopup="true">
+                    <span class="user-initial">John Doe</span>
+                    <svg class="-mr-1 c-dropdown text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="dropdownMenu" class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div class="py-1" role="none">
+                        <form method="POST" action="#" role="none">
+                            <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-700 menu-item" role="menuitem" tabindex="-1" id="menu-item-3">
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+                                    </svg>
+                                    <span>Sign out</span>
+                                </div>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
           </div>
         </nav>
@@ -208,5 +238,6 @@
             </footer>
         </div>
     </section>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
