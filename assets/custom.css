@@ -276,6 +276,8 @@ input[type="checkbox"] {
 }
 input[type="checkbox"] + label {
     position: relative;
+    min-height: 28px;
+    display: inline-block;
 }
 input[type="checkbox"] + label:before {
     content: '';
@@ -290,7 +292,7 @@ input[type="checkbox"] + label:before {
     cursor: pointer;
     margin-right: 10px;
     border-radius: 6px;
-    top: -2px;
+    top: 0;
 }
 input[type="checkbox"]:checked + label:before {
     background: linear-gradient(180deg, #6a6cff 0%, #bd71ff 100%);
@@ -299,7 +301,7 @@ input[type="checkbox"]:checked + label:after {
     content: '';
     display: block;
     position: absolute;
-    top: -3px;
+    top: 3px;
     left: 11px;
     width: 8px;
     height: 19px;
@@ -401,7 +403,7 @@ footer a, .a-custom {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
+    /* font-weight: 500; */
     /* color: #fff; */
 }
 .c-dropdown {
@@ -415,8 +417,9 @@ footer a, .a-custom {
 input[type="text"],
 input[type="email"],
 input[type="password"],
-section select {
-    font-size: 17px;
+section select,
+textarea {
+    font-size: 17px !important;
     height: 46px;
     font-weight: 400;
 }
@@ -425,4 +428,13 @@ section select {
 }
 .divide-logo .logo-1 {
     border-right: 1px solid #b5b5b5;
+}
+nav select {
+    padding-right: 1.5rem;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+}
+.dropdown-button svg {
+    width: 25px;
 }

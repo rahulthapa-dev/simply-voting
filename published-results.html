@@ -65,58 +65,57 @@
             </div>
         </nav>
     </header>
-    <section class="py-2 px-4 mt-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md p-4">
-            <ul id="breadcrumb" class="w-full">
-                <li class="completed"><a><span class="">1</span> <p class="breadcrumb-text hidden sm:inline-block">Fill Ballot</p></a></li>
-                <li class="completed"><a><span class="">2</span> <p class="breadcrumb-text hidden sm:inline-block">Review Ballot</p></a></li>
-                <li class="active"><a><span class="">3</span> <p class="breadcrumb-text hidden sm:inline-block">Done</p></a></li>
-            </ul>
-        </div>
-    </section>
     <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md overflow-hidden bg-[#FAF4C5]">
-            <div class="bg-ballet">
-                <div class="p-4 border-b-[1px] border-[#e0e0e0] bg-[#FBF2A4]">
-                    <h5 class="text-xl">Ballet proof</h5>
-                    <p class="text-sm">Election ID: 221771</p>
+        <div class="mx-auto max-w-[1024px] rounded-md bg-[#f5f5f5] text-sm overflow-hidden">
+            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0] bg-white">Results</h5>
+            <div class="p-4">
+                <!--  -->
+                <!--  -->
+                <div class="border border-[#e0e0e0] rounded-md bg-white">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Published Results</p>
+                    </div>
+                    <!-- <div class="p-4"></div> -->
+                    <div class="w-full divide-y divide-solid">
+                        <!---->
+                        <div class="p-4">
+                            <p class="mb-3">You have voted in the follwoing ballots:</p> 
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/past.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2023</a>
+                            </div>   
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/past.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2022</a>
+                            </div>   
+                            <div class="flex items-center gap-2 mb-3">
+                                <span><img src="assets/img/past.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2020</a>
+                            </div>  
+                        </div>
+                    </div>
                 </div>
-                <p class="p-4 text-sm bg-[#FAF4C5]">
-                    Votes cast using this ballot proof are not saved and receipts are not issued. To change the language, click on the language links above. To choose which ballot style to proof, select the elector's segmentation and then click the Apply button below. Please close the window when you are done.
-                </p>
+                <!--  -->
+                <!--  -->
+                <section class="py-2 px-4">
+                    <div class="mx-auto max-w-[1024px] rounded-md">
+                        <footer class="p-4 text-center mt-5">
+                            <div>
+                                This is the online voting system of <a href="">Your Organization. </a>
+                            </div>
+                            <div class="flex gap-3 justify-center mt-5">
+                                <span>Powered by</span>
+                                <a href="">
+                                    <img src="assets/img/logo.png" alt="logo">
+                                </a>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
-    <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#fff]">
-            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0]">Test Election 3 slate</h5>
-            
-            <!-- completed -->
-             <div class="p-4">
-                <div class="div-success flex text-center align-center justify-center flex-wrap py-5">
-                    <div>
-                        <img src="./assets/img/tabler_circle-check-filled.png" alt="check-icon" class="mx-auto">
-                    </div>
-                    <h2 class="text-2xl w-full">Success</h2>
-                    <p>Your vote has been recorded. You may view your voitng reciept below.</p>
-                </div>
-                <div class="text-center mt-5 pt-5">
-                    <a href="vote-list.html" class="px-5 py-2 rouned-lg text-white btn btn-continue">Back To Dashboard</a>
-                </div>
-             </div>
-            <footer class="p-4 text-center mt-5">
-                <div>
-                    This is the online voting system of <a href="">Your Organization. </a>
-                </div>
-                <div class="flex gap-3 justify-center mt-5">
-                    <span>Powered by</span>
-                    <a href="">
-                        <img src="assets/img/logo.png" alt="logo">
-                    </a>
-                </div>
-            </footer>
-        </div>
-    </section>
+    
     <script src="assets/js/custom.js"></script>
 </body>
 </html>
