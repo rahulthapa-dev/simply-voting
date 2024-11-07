@@ -74,11 +74,18 @@
     <section class="pb-2 px-4">
         <div class="mx-auto max-w-[1024px] bg-white rounded-md bg-[#FAF4C5]">
             <div class="px-4 pt-5 pb-4">
-                <p class="text-red-500 font-medium mb-2">There was a problem with your submission. Please review the fields below.</p>
-                <ul class="text-red-500 list-disc ps-5 gap-3 ms-4">
-                    <li  class="mb-3">Where do you live? You mayselect upto 2 options.</li>
-                    <li class="mb-3" >What's your favorite meal? You may only select 1 answer.</li>
-                </ul>
+                <div class="flex gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-red-500">
+                        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <p class="text-red-500 font-medium mb-2">There was a problem with your submission. Please review the fields below.</p>
+                        <ul class="text-red-500 list-disc ps-0 gap-3 ms-4">
+                            <li  class="mb-3">Where do you live? You mayselect upto 2 options.</li>
+                            <li class="mb-3" >What's your favorite meal? You may only select 1 answer.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
