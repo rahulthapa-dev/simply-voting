@@ -11,8 +11,8 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
 <body>
-    <header class="bg-white mb-4">
-        <nav class="mx-auto sm:flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header class="bg-white mb-4 border-b border-slate-100 border-solid">
+       <nav class="mx-auto sm:flex flex-wrap max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex align-items-center flex-nowrap items-center divide-logo">
                 <a href="#" class="logo-1 me-3 pe-3 py-3">
                     <span class="sr-only">Your Company</span>
@@ -24,8 +24,14 @@
                 </div>
             </div>
             
-            <div class="flex justify-center sm:justify-end gap-x-5 lg:gap-x-5 items-center">
-            <a href="vote-list.html" class="text-base font-normal leading-6 text-gray-900 nav-link">Dashboard</a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border border-slate-200 nav-button " aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
+                </svg>
+            </button>
+            <div class="hidden menu-list lg:flex justify-center sm:justify-end gap-x-5 lg:gap-x-5 items-center">
+                <a href="vote-list.html" class="text-base font-normal leading-6 text-gray-900 nav-link">Dashboard</a>
             <a href="published-results.html" class="nav-link text-base font-normal leading-6 text-gray-900">Published Results</a>
             <a href="javascript:void(0)" class="nav-link text-base font-normal  leading-6 text-gray-900">Contact</a>
             <div class="relative ">
@@ -72,7 +78,7 @@
         </nav>
     </header>
     <section class="py-2 px-4 mt-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md p-4">
+        <div class="mx-auto max-w-[1024px] border border-solid border-slate-100  shadow-md bg-white rounded-md p-4">
             <ul id="breadcrumb" class="w-full">
                 <li class="active"><a><span class="">1</span> <p class="breadcrumb-text hidden sm:inline-block">Fill Ballot</p></a></li>
                 <li><a><span class="">2</span> <p class="breadcrumb-text hidden sm:inline-block">Review Ballot</p></a></li>
@@ -81,7 +87,7 @@
         </div>
     </section>
     <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] bg-white rounded-md overflow-hidden bg-[#FAF4C5]">
+        <div class="mx-auto max-w-[1024px] border border-solid border-slate-100  shadow-md bg-white rounded-md overflow-hidden bg-[#FAF4C5]">
             <div class="bg-ballet">
                 <div class="p-4 border-b-[1px] border-[#e0e0e0] bg-[#FBF2A4]">
                     <h5 class="text-xl">Ballot proof</h5>
@@ -94,7 +100,7 @@
         </div>
     </section>
     <section class="py-2 px-4">
-        <div class="mx-auto max-w-[1024px] rounded-md bg-[#f5f5f5]">
+        <div class="mx-auto max-w-[1024px] border border-solid border-slate-100  shadow-md rounded-md bg-[#f5f5f5]">
             <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0] bg-white rounded-md">Test Election 3 slate</h5>
             <!-- step 1 -->
             <div class="p-3 overflow-x-auto">

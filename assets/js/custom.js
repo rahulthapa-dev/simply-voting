@@ -17,3 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.querySelector('.nav-button').addEventListener('click', function() {
+    document.querySelector('.menu-list').classList.toggle('block');
+});
