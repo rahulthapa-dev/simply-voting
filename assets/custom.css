@@ -489,6 +489,11 @@ a.nav-link {
         display: none;
       }
   }
+  @media (max-width: 600px) {
+    #dropdownMenu {
+        left: 0;
+    }
+  }
   @media (max-width: 375px) {
     .logo-1 img {
         height: auto;
