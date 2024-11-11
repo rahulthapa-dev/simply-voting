@@ -462,7 +462,9 @@ a.nav-link {
   nav .btn-continue {
     max-width: 200px;
   }
-
+  .menu-list {
+    margin-top: 5px;
+  }
   @media (max-width:1023.98px) {
     .block.menu-list {
         display: block !important;
@@ -486,4 +488,17 @@ a.nav-link {
       .block.menu-list a.nav-link:hover:after {
         display: none;
       }
+  }
+  @media (max-width: 375px) {
+    .logo-1 img {
+        height: auto;
+        width: 80px;
+    }
+    .org-name {
+        width: 110px;
+    }
+    .org-name h2 {
+        line-height: 1.2;
+        margin-bottom: 4px;
+     }
   }
