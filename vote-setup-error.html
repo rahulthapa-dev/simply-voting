@@ -81,7 +81,7 @@
         <div class="mx-auto max-w-[1024px] border border-solid border-slate-100  shadow-md bg-white rounded-md bg-[#FAF4C5]">
             <div class="px-4 pt-5 pb-4">
                 <div class="flex gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-red-500 error-icon">
                         <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
                     </svg>
                     <div>
@@ -145,13 +145,13 @@
                     <p>Votes cast using this ballot proof are not saved and receipts are not issued. </p>
                     <p>The turnout of this election so far is 0.0</p>
                 </div>
-                <div class="mt-4 p-3 border-l-4 border-[#eb5757] bg-[#FFBDBD]/60">
+                <div class="mt-4 p-3 border-l-4 border-[#eb5757] bg-[#FFBDBD]/60 decline-vote">
                     <input type="checkbox" name="" id="decline">
                     <label for="decline" class="font-bold uppercase">I Decline to vote</label>
                 </div>
                 <!--  -->
                 <div>
-                    <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                    <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white border-invalid">
                         <div class="p-4 border-b-[1px] border-[#e0e0e0]">
                             <p class="text-black text-base font-semibold mb-3">Where do you live?</p>
                             <p>You may select <span class="font-bold">up to 4</span> of the following</p>
@@ -161,7 +161,7 @@
                             
                         </div> -->
                         <div class="w-full divide-y divide-solid">
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div>
                                     <input type="checkbox" name="" id="opt">
                                     <label for="opt"></label>
@@ -175,7 +175,7 @@
                                     <img src="assets/img/monteral.png" alt="candidate-img" class="w-full">
                                 </div>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div>
                                     <input type="checkbox" name="" id="opt2">
                                     <label for="opt2"></label>
@@ -188,7 +188,7 @@
                                     <img src="assets/img/london.png" alt="candidate-img" class="w-full">
                                 </div>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div>
                                     <input type="checkbox" name="" id="opt3">
                                     <label for="opt3"></label>
@@ -202,14 +202,14 @@
                                 </div>
                             </div>
                             <div class="w-full p-4">
-                                <div class="md:w-3/4 md:flex">
+                                <div class="md:w-3/4 md:flex check-wrap">
                                     <div class="w-[150px] mb-2 md:mb-0">
                                         <input type="checkbox" name="" id="write-1">
                                         <label for="write-1" class="capitalize font-normal text-[#333]">Write-in</label>
                                     </div>
                                     <input type="text" name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 ">
                                 </div>
-                                <div class="md:w-3/4 md:flex mt-4">
+                                <div class="md:w-3/4 md:flex mt-4 check-wrap">
                                     <div class="w-[150px] mb-2 md:mb-0">
                                         <input type="checkbox" name="" id="write-2">
                                         <label for="write-2" class="capitalize text-[#333]">Write-in</label>
@@ -231,7 +231,7 @@
                         </div>
                         <!-- <div class="p-4"></div> -->
                         <div class="w-full divide-y divide-solid">
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div class="min-w-[140px] mb-2 sm:mb-0">
                                     <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 "></select>
                                 </div>
@@ -243,7 +243,7 @@
                                     <img src="assets/img/avatar.png" alt="candidate-img" class="w-full">
                                 </div>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div class="min-w-[140px] mb-2 sm:mb-0">
                                     <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 "></select>
                                 </div>
@@ -255,7 +255,7 @@
                                     <img src="assets/img/titanic.png" alt="candidate-img" class="w-full">
                                 </div>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div class="min-w-[140px] mb-2 sm:mb-0">
                                     <select name="" id="" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 "></select>
                                 </div>
@@ -305,15 +305,15 @@
                             
                         </div> -->
                         <div class="w-full divide-y divide-solid">
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <input type="checkbox" id="yes">
                                 <label for="yes" class="font-semibold text-[#333]">Yes</label>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <input type="checkbox" id="no">
                                 <label for="no" class="font-semibold text-[#333]">No</label>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <input type="checkbox" id="abstain">
                                 <label for="abstain" class="font-semibold text-[#333]">Abstain</label>
                             </div>
@@ -347,7 +347,7 @@
                             
                         </div> -->
                         <div class="w-full divide-y divide-solid">
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div class="min-w-[140px] mb-2 sm:mb-0">
                                     <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 " />
                                 </div>
@@ -359,7 +359,7 @@
                                     <img src="assets/img/dog.png" alt="candidate-img" class="w-full">
                                 </div>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div class="min-w-[140px] mb-2 sm:mb-0">
                                     <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 " />
                                 </div>
@@ -371,7 +371,7 @@
                                     <img src="assets/img/cat.png" alt="candidate-img" class="w-full">
                                 </div>
                             </div>
-                            <div class="sm:flex p-4 gap-x-4">
+                            <div class="sm:flex p-4 gap-x-4 check-wrap">
                                 <div class="min-w-[140px] mb-2 sm:mb-0">
                                     <input type="text" class="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 " />
                                 </div>

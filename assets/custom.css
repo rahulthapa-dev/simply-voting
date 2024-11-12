@@ -465,6 +465,21 @@ a.nav-link {
   .menu-list {
     margin-top: 5px;
   }
+  .error-icon {
+    width: 74px;
+    height: 74px;
+    display: inline-block;
+  }
+  .check-wrap:hover{
+    background-color: rgba(255 233 132 / 50%);
+  }
+  .decline-vote:hover {
+    background-color: rgba(231 126 126 / 60%);
+  }
+  div.border-invalid {
+    border: 2px solid rgba(239 68 68 / 60%);
+    box-shadow: 0 2px 13px rgba(239,68,68,.5);
+  }
   @media (max-width:1023.98px) {
     .block.menu-list {
         display: block !important;
