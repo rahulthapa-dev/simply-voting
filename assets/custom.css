@@ -425,6 +425,7 @@ textarea {
 }
 .btn.btn-header {
     min-width: 110px;
+    max-width: fit-content;
 }
 .divide-logo .logo-1 {
     border-right: 1px solid #b5b5b5;
