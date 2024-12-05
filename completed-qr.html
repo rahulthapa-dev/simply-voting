@@ -23,7 +23,7 @@
                     <p class="text-sm font-semibold">Online Voting</p>
                 </div>
             </div>
-
+            
             <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border border-slate-200 nav-button " aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -31,8 +31,8 @@
                 </svg>
             </button>
             <div class="hidden menu-list lg:flex justify-center sm:justify-end gap-x-5 lg:gap-x-5 items-center">
-                <a href="vote-list.html" class="text-base font-normal leading-6 text-gray-900 nav-link">Dashboard</a>
-                <a href="published-results.html" class="nav-link nav-link-active text-base font-normal leading-6 text-gray-900">Published Results</a>
+                <a href="vote-list.html" class="text-base nav-link-active font-normal leading-6 text-gray-900 nav-link">Dashboard</a>
+                <a href="published-results.html" class="nav-link text-base font-normal leading-6 text-gray-900">Published Results</a>
                 <a href="javascript:void(0)" class="nav-link text-base font-normal  leading-6 text-gray-900">Contact</a>
                 <div class="relative ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 absolute top-[9px] left-0">
@@ -58,7 +58,7 @@
                                 <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-gray-900">
                                     <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clip-rule="evenodd" />
                                 </svg> -->
-                                <span class="user-initial">John D.</span>
+                                <span class="user-initial">Savinder D.</span>
                             </div>
                         </button>
                     </div>
@@ -66,33 +66,72 @@
             </div>
         </nav>
     </header>
+    <div class="mx-auto max-w-[1024px]">
+        <div>
+            <div class="div-success flex text-center align-center justify-center flex-wrap py-5">
+                <div>
+                    <img src="./assets/img/tabler_circle-check-filled.png" alt="check-icon" class="mx-auto">
+                </div>
+                <h2 class="text-2xl w-full">Success</h2>
+                <p>Your vote has been recorded. You may view your voitng reciept below.</p>
+            </div>
+        </div>
+    </div>
     <section class="py-2 px-4">
         <div class="mx-auto max-w-[1024px] border border-solid border-slate-100  shadow-md rounded-md bg-[#f5f5f5] text-sm overflow-hidden">
-            <h5 class="p-4 text-xl border-b-[1px] border-[#e0e0e0] bg-white">Published Results</h5>
             <div class="p-4">
-                <!--  -->
-                <!--  -->
-                <div class="border border-[#e0e0e0] rounded-md bg-white">
-                    <!-- <div class="p-4 border-b-[1px] border-[#e0e0e0]">
-                        <p class="text-black text-base font-semibold mb-0">Published Results</p>
-                    </div> -->
+                <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Verify Your Vote</p>
+                    </div>
                     <!-- <div class="p-4"></div> -->
                     <div class="w-full divide-y divide-solid">
                         <!---->
                         <div class="p-4">
-                            <p class="mb-3">You have voted in the follwoing ballots:</p> 
-                            <div class="flex items-center gap-2 mb-3">
-                                <span><img src="assets/img/past.png" alt="alert"></span>
-                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2023</a>
+                            <p class="mb-3 w-full">
+                                You may check  that your vote was cast as intended by verifying your selections on a separate device. You have <b>30 minutes</b> from when you submit your ballot to do so. <b>This step is entirely voluntary</b>. You do not need to verify your vote for it to be counted. Keep in mind that you cannot access these instructions once you leave this page.
+                            </p> 
+                            <div class="flex items-center flex-wrap mb-3 justify-center mx-auto max-w-4xl text-center">
+                                <p class="w-full">Scan the QR code below using a mobile phone or tablet</p>
+                                <div>
+                                    <img src="assets/img/qr_code.png" alt="">
+                                </div>
+                                <p class="w-full">Alternatively, copy the verification link, send it yourself, and follow it on another devices.</p>
                             </div>   
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="border border-[#e0e0e0] rounded-md bg-white mt-3">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Current Ballots</p>
+                    </div>
+                    <!-- <div class="p-4"></div> -->
+                    <div class="w-full divide-y divide-solid">
+                        <!-- step 1 -->
+                        <div class="p-4">
+                            <p class="mb-3">You are registered to vote in the following ballots</p> 
                             <div class="flex items-center gap-2 mb-3">
-                                <span><img src="assets/img/past.png" alt="alert"></span>
-                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2022</a>
+                                <span><img src="assets/img/alert.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">Change Your Vote</span> - True Anonymity Presentation</a>
                             </div>   
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="border border-[#e0e0e0] mt-3 rounded-md bg-white">
+                    <div class="p-4 border-b-[1px] border-[#e0e0e0]">
+                        <p class="text-black text-base font-semibold mb-0">Past Ballots</p>
+                    </div>
+                    <!-- <div class="p-4"></div> -->
+                    <div class="w-full divide-y divide-solid">
+                        <!---->
+                        <div class="p-4">
                             <div class="flex items-center gap-2 mb-3">
-                                <span><img src="assets/img/past.png" alt="alert"></span>
-                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - Election 2020</a>
-                            </div>  
+                                <span><img src="assets/img/receipt.png" alt="alert"></span>
+                                <a href="" class="a-custom a-link "><span class="font-semibold">View receipt </span> - New Revealer</a>
+                            </div>   
                         </div>
                     </div>
                 </div>
