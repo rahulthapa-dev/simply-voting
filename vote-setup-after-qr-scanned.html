@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="h-full bg-[#ff0000]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body>
+    <header class="bg-white mb-4 border-b border-slate-100 border-solid">
+       <nav class="mx-auto flex flex-wrap max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex align-items-center flex-nowrap items-center divide-logo">
+                <a href="#" class="logo-1 me-3 pe-3 py-3">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8 w-auto mx-auto sm:mx-0" src="assets/img/login-company.png" alt="">
+                </a>
+                <div class="-m-1.5 p-1.5 text-start org-name">
+                    <h2 class="text-lg font-semibold">Your Organization</h2>    
+                    <p class="text-sm font-semibold">Online Voting</p>
+                </div>
+            </div>
+            
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 border border-slate-200 nav-button " aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path>
+                </svg>
+            </button>
+            <div class="hidden menu-list lg:flex justify-center sm:justify-end gap-x-5 lg:gap-x-5 items-center">
+                <a href="vote-list.html" class="text-base font-normal leading-6 text-gray-900 nav-link">Dashboard</a>
+                <a href="published-results.html" class="nav-link text-base font-normal leading-6 text-gray-900">Published Results</a>
+                <a href="javascript:void(0)" class="nav-link text-base font-normal  leading-6 text-gray-900">Contact</a>
+                <div class="relative ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 absolute top-[9px] left-0">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                    </svg>
+                    <select id="countries" class="text-base font-normal leading-6 text-gray-900 border-0 focus:border-0 focus:outline-none focus:ring-0 ps-[25px] select-custom">
+                        <option value="US">English</option>
+                        <option value="CA">Dutch</option>
+                        <option value="FR">French</option>
+                    </select>
+                </div>
+                <div class="relative inline-block text-left">
+                    <div class="">
+                        <button type="submit" role="menuitem" tabindex="-1" id="menu-item-3" class="px-4 py-2 rouned-lg text-white btn btn-continue text-center btn-header flex gap-2 items-center">
+                            <div class="flex items-center gap-1">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+                                </svg> -->
+                                <span class="font-semibold">Sign out</span>
+                            </div>
+                            <span>|</span> 
+                            <div class="flex items-center">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-gray-900">
+                                    <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clip-rule="evenodd" />
+                                </svg> -->
+                                <span class="user-initial">John D.</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="p-4 flex gap-x-5 items-center justify-center bg-[#FFE0D3] sticky top-0 mt-[-16px] z-10">
+        <img src="assets/img/time-alert.png" alt="alert">
+        <div>
+            <span class="font-semibold">53:47</span>
+            <span>left to vote</span>
+        </div>
+        <div>
+            <img src="assets/img/close.png" alt="close">
+        </div>
+    </div>
+    <section class="py-2 px-4">
+        <div class="mx-auto max-w-[1024px] border border-solid border-slate-100  shadow-md bg-white rounded-md bg-[#FAF4C5]">
+            <div class="bg-ballet rounded-md overflow-hidden">
+                <div class="content p-4 pt-0 bg-white">
+                    <div class="p-4">
+                        <div class="div-success flex text-center align-center justify-center flex-wrap py-5">
+                            <div>
+                                <img src="./assets/img/tabler_circle-check-filled.png" alt="check-icon" class="mx-auto">
+                            </div>
+                            <h2 class="text-2xl w-full">Success</h2>
+                            <p>Your vote has been recorded. You may view your voitng reciept below.</p>
+                        </div>
+                        <p class="text-sm pt-5">
+                            Election: True Anonymity Presentation
+                        </p>
+                        <p class="text-sm pt-5">
+                            Random Question <strong>Example 2</strong>
+                        </p>
+                        <p class="text-sm pt-5">
+                            Receipt Code: YMV2
+                        </p>
+                        <p class="text-sm pt-5">
+                            if this voting reciept does not correspond with your voting selections, write down receipt code above and contact <a href="" class="underline">support@simplyvoting.com</a>
+                        </p>
+                        <div class="text-center mt-5 pt-5">
+                            <a href="vote-list.html" class="px-5 py-2 rouned-lg text-white btn btn-continue">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
